@@ -118,7 +118,7 @@ Node* LinkedList::searchList(int key)
     Node* ptr = head;
     while (ptr != NULL && ptr->key != key)
     {
-        ptr = ptr->next;
+        ptr = ptr -> next;
     }
     return ptr;
 }
