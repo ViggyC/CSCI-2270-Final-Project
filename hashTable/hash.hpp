@@ -10,6 +10,7 @@ struct node
 {
     int key;
     struct node* next;
+    struct node* prev;
 };
 
 class HashTable
@@ -25,6 +26,8 @@ public:
 
     // inserts a key into hash table
     bool insertItem(int key);
+    void linearProb(int key);
+    void quadraticProb(int key);
 
     // hash function to map values to key
     unsigned int hashFunction(int key);
